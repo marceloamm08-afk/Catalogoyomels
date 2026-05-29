@@ -6,32 +6,44 @@
   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+  <!-- Barra de navegación -->
+  <header>
+    <h1>Tiendita</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#valores">Valores</a>
+      <a href="#vehiculos">Vehículos</a>
+      <a href="#cosmeticos">Cosméticos</a>
+      <a href="#calculadora">Calculadora</a>
+      <a href="#carrito">Carrito</a>
+    </nav>
+  </header>
 
-  <nav class="barra">
-    <ul>
-      <li>🏠 Inicio</li>
-      <li>📋 Valores</li>
-      <li>🚗 Vehículos</li>
-      <li>💄 Cosméticos</li>
-      <li>🧮 Calculadora</li>
-      <li>🛒 Carrito</li>
-    </ul>
-  </nav>
-
-  
-  <section id="catalogo">
-    <h2>Catálogo de Productos</h2>
-    <p>Aquí aparecerán tus productos...</p>
+  <!-- Sección Inicio -->
+  <section id="inicio" class="hero">
+    <h2>Bienvenido a Tiendita</h2>
+    <p>Tu catálogo elegante en grises y blancos.</p>
   </section>
 
-  <section id="carrito">
-    <h2>Carrito de Compras</h2>
-    <ul id="listaCarrito"></ul>
-    <p>Total: $<span id="total">0</span></p>
-    <div id="paypal-button-container"></div>
+  <!-- Sección Valores -->
+  <section id="valores">
+    <h2>Valores</h2>
+    <p>Aquí podrás organizar tus productos por categorías.</p>
   </section>
 
+  <!-- Sección Vehículos -->
+  <section id="vehiculos">
+    <h2>Vehículos</h2>
+    <p>Aquí aparecerán los productos de la categoría Vehículos.</p>
+  </section>
 
+  <!-- Sección Cosméticos -->
+  <section id="cosmeticos">
+    <h2>Cosméticos</h2>
+    <p>Aquí aparecerán los productos de la categoría Cosméticos.</p>
+  </section>
+
+  <!-- Sección Calculadora -->
   <section id="calculadora">
     <h2>Calculadora de Valores</h2>
     <p>Ingresa el nombre del producto, tu oferta y el valor de referencia:</p>
@@ -42,11 +54,19 @@
     <p id="resultado"></p>
   </section>
 
+  <!-- Sección Carrito -->
+  <section id="carrito">
+    <h2>Carrito de Compras</h2>
+    <ul id="listaCarrito"></ul>
+    <p>Total: $<span id="total">0</span></p>
+    <div id="paypal-button-container"></div>
+  </section>
+
   <footer>
     <p>&copy; 2026 Tiendita</p>
   </footer>
 
-
+  <!-- PayPal SDK -->
   <script src="https://www.paypal.com/sdk/js?client-id=TU_CLIENT_ID"></script>
   <script src="tiendita.js"></script>
 </body>
