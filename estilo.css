@@ -5,33 +5,33 @@ body {
   color: #333;
 }
 
-.barra {
+header {
   background-color: #2c2c2c;
-  padding: 10px;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-.barra ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.barra li {
-  color: #f5f5f5;
+nav a {
+  color: #ddd;
   margin: 0 15px;
+  text-decoration: none;
   font-weight: bold;
-  cursor: pointer;
-  transition: color 0.3s;
 }
 
-.barra li:hover {
-  color: #ffffff;
+nav a:hover {
+  color: white;
 }
 
 section {
-  padding: 30px;
+  padding: 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.hero {
+  background: linear-gradient(to right, #e0e0e0, #ffffff);
+  text-align: center;
+  padding: 60px 20px;
 }
 
 button {
@@ -52,4 +52,5 @@ footer {
   text-align: center;
   padding: 15px;
 }
+
 
