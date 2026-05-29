@@ -11,11 +11,6 @@ document.querySelectorAll("nav a").forEach(enlace => {
 let carrito = [];
 let total = 0;
 
-function agregarAlCarrito(nombre, precio) {
-  carrito.push({ nombre, precio });
-  total += precio;
-  actualizarCarrito();
-}
 
 function actualizarCarrito() {
   let lista = document.getElementById("listaCarrito");
