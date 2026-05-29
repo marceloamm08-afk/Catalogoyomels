@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tiendita</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Tiendita</h1>
+        <nav>
+            <a href="#valores">Valores</a>
+            <a href="#carrito">Carrito</a>
+        </nav>
+    </header>
+
+    <!-- Apartado Valores -->
+    <section id="valores">
+        <h2>Catálogo de Valores</h2>
+
+        <!-- Subcategoría Vehículos -->
+        <h3>Vehículos</h3>
+        <div class="producto">
+            <p>Auto Deportivo - $100</p>
+            <button onclick="agregarAlCarrito('Auto Deportivo', 100)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <p>Moto - $50</p>
+            <button onclick="agregarAlCarrito('Moto', 50)">Agregar al carrito</button>
+        </div>
+
+        <!-- Subcategoría Cosméticos -->
+        <h3>Cosméticos
